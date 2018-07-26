@@ -5,8 +5,7 @@ package by.oksana.lesson8;
 import java.io.*;
 
 public class TaskTextHandling {
-
-//	private static final String FILE_PATH = "E:\\textFile.txt";
+	
 	private static final String WHAT_TO_DELETE = "word5";
 
 	public static void main(String[] arg) {
@@ -30,7 +29,7 @@ public class TaskTextHandling {
 
 		try {
 			// 1) Сначала считываем байты из файла в файловую систему с помощью FileInputStream (оно пока нечитабельно).
-			// 2) Потом нечитабельное из FileInputStream преобразовываем в символы с помощью InputStreamReader (
+			// 2) Потом нечитабельное из FileInputStream преобразовываем в символы с помощью InputStreamReader
 			// 3) Потом символьный набор из InputStreamReader кладём в BufferedReader
 			FileInputStream fis = new FileInputStream(file);
 			InputStreamReader ist = new InputStreamReader(fis, "UTF-8");
