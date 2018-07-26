@@ -5,7 +5,7 @@ package by.oksana.lesson8;
 import java.io.*;
 
 public class TaskTextHandling {
-	
+
 	private static final String WHAT_TO_DELETE = "word5";
 
 	public static void main(String[] arg) {
@@ -37,8 +37,8 @@ public class TaskTextHandling {
 			//
 			String read;
 			while ((read = br.readLine()) != null) { // Читаем построчно
-				stringBuilder.append(read); // складываем стрингбилдер
-				stringBuilder.append("\n"); // сохранить разбиение теста на строки
+				stringBuilder.append(read); // складываем в стрингбилдер
+				stringBuilder.append("\n"); // сохранить разбиение текста на строки
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
